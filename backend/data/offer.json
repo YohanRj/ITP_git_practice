@@ -1,0 +1,21 @@
+[
+    {
+        "description" : "Buy two Chocolate Mousse cakes for Rs.1500.00 ",
+        "endDate" : "01-08-2021",
+        "price" : "1500.00",
+        "images": [{
+            "public_id" : "avatars/ecxckohfbqenbd1u0mjf",
+            "url" : "https://res.cloudinary.com/dzgvwoiaz/image/upload/v1631389985/avatars/ecxckohfbqenbd1u0mjf.jpg"
+        }]
+    },
+
+    {
+        "description" : "Buy two Coffee cakes for Rs.1600.00 ",
+        "endDate" : "01-08-2021",
+        "price" : "1600.00",
+        "images": [{
+            "public_id" : "avatars/mzjfndfvthfvokohgqs8",
+            "url" : "https://res.cloudinary.com/dzgvwoiaz/image/upload/v1631389985/avatars/mzjfndfvthfvokohgqs8.jpg"
+        }]
+    }
+]

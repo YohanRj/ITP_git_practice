@@ -1,0 +1,33 @@
+[
+    {
+        "name" : "Chocolate Cake 1",
+        "smallPrice" : "1000.00",
+        "mediumPrice" : "1800.00",
+        "largePrice" : "2500.00",
+        "freshFruitToppingPrice" : "700.00",
+        "chocolateCandiesAndCashewNutToppingPrice" : "800.00",
+        "moldableFondanToppingPrice" : "900.00",
+        "description" : "This is a rounded cake",
+        "menu" : "Chocolate",
+        "images": [{
+            "public_id" : "avatars/ecxckohfbqenbd1u0mjf",
+            "url" : "https://res.cloudinary.com/dzgvwoiaz/image/upload/v1631389985/avatars/ecxckohfbqenbd1u0mjf.jpg"
+        }]
+    },
+
+    {
+        "name" : "Coffee Cake 1",
+        "smallPrice" : "1100.00",
+        "mediumPrice" : "1900.00",
+        "largePrice" : "2700.00",
+        "freshFruitToppingPrice" : "600.00",
+        "chocolateCandiesAndCashewNutToppingPrice" : "700.00",
+        "moldableFondanToppingPrice" : "800.00",
+        "description" : "This is a box shaped cake",
+        "menu" : "Coffee",
+        "images": [{
+            "public_id" : "avatars/mzjfndfvthfvokohgqs8",
+            "url" : "https://res.cloudinary.com/dzgvwoiaz/image/upload/v1631389985/avatars/mzjfndfvthfvokohgqs8.jpg"
+        }]
+    }
+]
