@@ -89,7 +89,7 @@ export const UpdateSupplier = ({ match, history }) => {
             // setSEmail('dasun@gmail.com')
             // setSGender('Male')
             // setSAcct('12345678')
-            console.log('will work at success');
+            // console.log('will work at success');
 
         }
         
