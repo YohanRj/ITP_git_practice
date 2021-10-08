@@ -1,0 +1,15 @@
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding:20px;
+    margin-right: 10px;
+}

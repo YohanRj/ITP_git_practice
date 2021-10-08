@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    width:100%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left:-50px;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #e288da, #e17f7f, #a25cf3);
+    color: rgb(255, 255, 255);
+    padding: 20px 0 1px;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px; 
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.rowcopy{
+    width: 100%;
+    bottom: 0%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 25%;
+    padding:20px;
+    margin-right: 10px;
+}
+
+.col:nth-child(2) .col:nth-child(3) .col:nth-child(4){
+    flex-basis: 15%;
+}
+.col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 25px;
+}
+col p{
+    font-family: 'Rancho', cursive;
+}
+
+.email{
+    width: fit-content;;
+    margin:20px 0;
+    border-bottom: 1px #00FEF6;
+    font-family: 'Antic Didone', serif;
+    font-size: 15px;
+}
+/* ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color:rgb(62, 60, 65);
+    font-size: large;
+    margin-left: -20px;
+    font-family: 'Cinzel Decorative', cursive;
+
+}
+
+ul :hover{
+    color: rgb(223, 216, 230);
+    font-family: initial;
+    font-size: 30px;
+}
+
+ul h3{
+    align-self: center;
+} */
+
+
+.ulHeader li{
+    list-style: none;
+    margin-bottom: 12px;
+    
+}
+.ulHeader li a{
+    text-decoration: none;
+    color:rgb(62, 60, 65);
+    font-size: large;
+    margin-left: -20px;
+    font-family: 'Cinzel Decorative', cursive;
+
+}
+
+.ulHeader :hover{
+    color: rgb(223, 216, 230);
+    font-family: initial;
+    font-size: 30px;
+}
+
+.ulHeader h3{
+    align-self: center;
+}
+
+
+
+.social-icons .fab{
+    width: 60px;
+    border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #000;
+    background:#fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+
+}
+.copyright{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+
+}
+
+.underlineAnimation{
+    width:100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position:absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underlineAnimation span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width:700px){
+    footer{
+        bottom:unset;
+    }
+    .col{
+        flex-basis:100%;
+      
+    }
+    .col:nth-child(2) .col:nth-child(3) .col:nth-child(4){
+        flex-basis: 100%;
+    }
+}
+
+/*Font Classes*/
+
+.Title{
+    font-family: 'Marcellus', serif;
+    font-size: 15px;
+}
+
+.contact{
+    font-family: 'Antic Didone', serif;
+    font-size: 15px;
+}
+
+
+
+

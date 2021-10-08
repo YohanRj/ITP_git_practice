@@ -1,0 +1,35 @@
+[
+    {
+        "s_item_name": "Sugar",
+        "s_item_price": "180.00",
+        "s_item_description": "Used for making dough",
+        "supplier_id": "S1140",
+        "supply_items_id": "T0043",
+        "s_qty": "10",
+        "sup_date": "08-20-2021"
+    },
+
+
+
+    {
+        "s_item_name": "Flour",
+        "s_item_price": "250.00",
+        "s_item_description": "Used for making dough",
+        "supplier_id": "S1158",
+        "supply_items_id": "T0041",
+        "s_qty": "10",
+        "sup_date": "08-24-2021"
+    },
+
+
+
+    {
+        "s_item_name": "Icing sugar",
+        "s_item_price": "200.00",
+        "s_item_description": "Used for making icing",
+        "supplier_id": "S1146",
+        "supply_items_id": "T0044",
+        "s_qty": "10",
+        "sup_date": "08-30-2021"
+    }
+]
