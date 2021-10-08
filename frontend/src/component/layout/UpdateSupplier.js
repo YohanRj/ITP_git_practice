@@ -55,7 +55,7 @@ export const UpdateSupplier = ({ match, history }) => {
             setSGender(  supplier.supp_gender);
             setSAcct(  supplier.acct_no);
 
-            console.log('will work at fail');
+            
 
         } 
         else {
