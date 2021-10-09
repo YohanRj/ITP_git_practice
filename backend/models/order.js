@@ -13,27 +13,27 @@ const orderSchema = mongoose.Schema({
         required: true,
         ref: 'User'
     },
-    phone_no:{
-        type: mongoose.Schema.Types.String,
-        required: true,
-        ref: 'User'
-    },
+ 
    
     //order items info since this is an array unique id will genarate
     orderItems:[{
-        product_name: {
+        name: {
             type: String,
             required: true
         },
 
-        qty:{
+        image:{
+            type: String,
+        },
+
+        quantity:{
             type: Number,
             required: true
         },
 
         size: {
             type: String,
-            required: true,
+            // required: true,
             enum: {
                 values:[
                     '500g',
@@ -46,12 +46,13 @@ const orderSchema = mongoose.Schema({
 
         topping: [{
             type: String,
-            required: true,
+            // required: true,
             enum: {
                 values:[
-                    'Chocalate and Nuts',
-                    'Fresh Fruits',
-                    'Frosting Decoration with Sprinkles'
+                    'None',
+                    'Fresh Fruit',
+                    'Candies and nuts',
+                    'Moldable Fondan'
                 ],
                 message: 'Please select a Topping from given Toppings. '
             }
@@ -63,9 +64,9 @@ const orderSchema = mongoose.Schema({
             ref: 'Product'
         },
 
-        itemPrice: {       //(toppoing prize + size prize)*qty
+        price: {       //(toppoing prize + size prize)*qty
             type: Number,
-            required: true,
+            // required: true,
             default: 0.0
         },
 
@@ -78,7 +79,7 @@ const orderSchema = mongoose.Schema({
         },
         paymentStatus: {
             type: String,
-            required: true,
+            // required: true,
             default: 'Pending'
         }
     },
@@ -90,7 +91,14 @@ const orderSchema = mongoose.Schema({
 
         deliveryAddress: {
             type: String,
+            // required: true
+        },
+        phone_no:{
+            type: Number,
             required: true
+            // type: mongoose.Schema.Types.String,
+            // required: true,
+            // ref: 'User'
         },
 
         deliveryStatus: {
@@ -105,8 +113,8 @@ const orderSchema = mongoose.Schema({
 
     deliveryPrice: {
         type: Number,
-        required: true,
-        default: 100.0
+        // required: true,
+        default: 200.0
     },
 
     totPrice: {
@@ -123,7 +131,7 @@ const orderSchema = mongoose.Schema({
 
     orderStatus:{
         type: String,
-        required: true,
+        // required: true,
         default: 'Pending'
     }
 

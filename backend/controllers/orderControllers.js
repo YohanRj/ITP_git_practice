@@ -12,6 +12,7 @@ exports.newOrder = catchAsyncErrors( async (req, res, next) => {
     const{
         orderItems,
         paymentInfo,
+        phone_no,
         deliveryInfo, 
         deliveryPrice,
         totPrice,
@@ -23,7 +24,7 @@ exports.newOrder = catchAsyncErrors( async (req, res, next) => {
 
         userID: req.user._id,
         customerName: req.user.first_name + " " + req.user.last_name,
-        phone_no: req.user.phone_no,
+        phone_no,
         orderItems,
         paymentInfo,
         deliveryInfo, 
@@ -82,11 +83,11 @@ exports.updateOrderUser = catchAsyncErrors( async(req,res,next) => {
 
 //get logged in user order => /api/v1/orders/me
 exports.myOrders = catchAsyncErrors( async(req,res,next) => {
-    const orders = await Order.find({userID:req.user._id})
+    // const orders = await Order.find({userID:req.user._id})
 
     const apiFeatures = new APIFeatures(Order.find({userID:req.user._id}).sort('-createdAt'), req.query)
 
-    // const orders = await apiFeatures.query;
+    const orders = await apiFeatures.query;
 
     res.status(200).json({
         success: true,
