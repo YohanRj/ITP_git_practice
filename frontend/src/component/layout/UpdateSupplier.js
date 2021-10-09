@@ -113,7 +113,7 @@ export const UpdateSupplier = ({ match, history }) => {
             })
         }
         dispatch(getSingleSupplier(match.params.id));
-        console.log('will work for all');
+        // console.log('will work for all');
 
 
     }, [dispatch, alert, error, history, supplierID,  supplier, loading, updateError] )
