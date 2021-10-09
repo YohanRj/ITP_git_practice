@@ -97,7 +97,7 @@ export const UpdateSupplier = ({ match, history }) => {
         if(error) {
             alert.error(error);
             dispatch(clearErros());
-            console.log('will work for errors');
+            // console.log('will work for errors');
         }
 
         if(updateError) {
