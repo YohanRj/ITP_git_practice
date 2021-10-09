@@ -74,6 +74,7 @@ export const UpdateSupplier = ({ match, history }) => {
             setSGender( gender );
             setSAcct( account);
 
+            console.log('damn');
             // setSName( supplier.supplier_name);
             // setSNIC( supplier.supp_nic);
             // setSContact( supplier.supp_contact_no);
